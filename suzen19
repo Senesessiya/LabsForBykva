@@ -1,0 +1,16 @@
+#!/bin/bash
+
+mkdir Documents
+cd Documents
+mkdir projects
+cd projects
+mkdir using
+cd using
+mkdir simple
+cd simple
+mkdir bash
+cd bash
+mkdir commands
+cd commands
+flg=$(ls -a | egrep -o '[a-zA-Z0-9]{28}')
+echo 'Flag is:' $flg
