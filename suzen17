@@ -1,0 +1,4 @@
+#1/bin/bash
+
+flg=$(ls -a | egrep -0 '[a-zA-Z0-9]{28}')
+echo 'Flag is:' $flg
