@@ -1,3 +1,6 @@
-!/bin/bash
+#!/bin/bash
 
-lsdva huya
+flg1=$(ls part1)
+flg2=$(ls home/john/Documents/part2/)
+flg3=$(ls home/john/Desktop/part3/)
+echo 'Flag is:' $flg1$flg2$flg3
