@@ -1,4 +1,4 @@
 #!/bin/bash
 
 flg=$(pwd | egrep -o '[a-zA-Z0-9]{28}')
-echo 'Flag is:' $flg
+echo 'Flag is:' $flg 
