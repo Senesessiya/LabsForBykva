@@ -8,6 +8,15 @@
 **ЗАЛОГ _УСПЕШНОЙ СДАЧИ_ ЛАБЫ**
 ~~(НЕТ)~~
 
+Характеристики нашей прекрасной вирутальной машины:
+..* 1 gb ram
+..* 1 cpu
+..* 2 hdd (ssd1, ssd2, их равный размер, галочки hot swap и ssd)
+..* SATA контроллер на 4 порта
+
+Всё как вы и заказывали ;)
+
+
 ![Начинаем установку](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/1_Nachinaem_ustanovku.png "Начинаем установку")
 ![Первое разделение дисков](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/2_Pervoe_razdelenie_diskov.png "Первое разделение дисков")
 ![Указание места для RAID](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/3_Ukazanie_mesta_dlya_RAID.png "Указание места для RAID")
@@ -24,12 +33,21 @@
 
 ## Задание 2 (Эмуляция отказа одного из дисков)
 
+Так как мы при настройке нашей виртуальной машины выбрали HotSwap, то теперь мы можем издеваться как хотим. Пошло-поехало. Удаляем ssd1 в свойствах машины и ssd1.vmdk.
+
+И вот как реагирует вм на то, что мы тут творим:
 ![Реакция на удаление SSD1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/1_Reakciya_na_udalenie_SSD1.png "Настройка RAID")
 ![Миртуальная машина не работает](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/2_Virtualnaya_machina_ne_rabotaet.png "Виртуальная машина не работает")
 ![Проверка статуса RAID после удаления SSD1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/3_Proverka_statusa_RAID_posle_udaleniya_ssd1.png "Проверка статуса RAID после удаления SSD1")
+
+О, чудо! Всевышний даровал нам новый ssd3. Да подключим же мы его.
 ![Реакция машины на добавление SSD3](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/4_Reakciya_machini_na_dobavlenie_SSD3.png "Реакция машины на добавление SSD3")
+
+А давайте-ка добавим его в RAID. Не очкуй, я сто раз так делал (нет)
 ![Добавление в RAID SSD1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/5_Dobavlenie_v_RAID_ssd3.png "Добавление в RAID SSD3")
 ![Результат в mdstat](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/6_Rezultat_v_mdstat.png "Результат в mdstat")
+
+Давайте поблагодарим LVM за то, что она сохраняет все данные. Храни тебя Бог
 ![Результат задания 2](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/7_Rezultat_zadaniya_2.png "Результат задания 2")
 
 
