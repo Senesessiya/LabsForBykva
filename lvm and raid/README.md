@@ -35,3 +35,31 @@
 
 ## Задание 3 (Добавление новых дисков и перенос раздела)
 
+
+![Информация о дисках после удаления SSD2](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/1_Informaciya_o_diskah_posle_udaleniya_SSD2.png "Информация о дисках после удаления SSD2")
+![Информация в mdstat после удаления SSD2](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/2_Informaciya_v_mdstat_posle_udaleniya_ssd2.png "Информация в mdstat после удаления SSD2")
+![Информация после добавления SSD4](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/3_Informaciya_posle_dobavleniya_ssd4.png "Информация после добавления SSD4")
+![Информация после копирования файловой таблицы на SSD4](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/4_Informaciya_posle_kopirovaniya_failovoi_tablici_na_ssd4.png "Информация после копирования файловой таблицы на SSD4")
+![Информация после монтирования boot на SSD4](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/5_Informaciya_posle_montirovaniya_boot_na_ssd4.png "Информация после монтирования boot на SSD4")
+![Информация после создания нового RAID массива](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/6_Informaciya_posle_sozdaniya_novogo_RAID_massiva.png "Информация после создания нового RAID массива")
+![Изменения pvs до и пос ле создания нового физ.тома](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/7_Izmeneniya_pvs_do_i_posle_sozdaniya_novogo_fiz_toma.png "Изменения pvs до и пос ле создания нового физ.тома")
+![Информация о дисках после создания физ.тома](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/8_Informaciya_o_diskah_posle_sozdaniya_fiz_toma.png "Информация о дисках после создания физ.тома")
+![log, root и var находятся на md0](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/9_log_root_i_var_nahodyatsya_na_md0.png "log, root и var находятся на md0")
+![Результат после перемещения LV](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/10_Rezltat_posle_peremecheniya_LV.png "Результат после перемещения LV")
+![Информация о дисках только после добавления всех новых](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/11_Informaciya_o_diskah_tolko_posle_dobavleniya_vseh_novih.png "Информация о дисках только после добавления всех новых")
+![Информация о дисках после копипрования таблицы файлов и SDA1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/12_Informaciya_o_discah_posle_kopirovaniya_tablici_failov_i_sda1.png "Информация о дисках после копипрования таблицы файлов и SDA1")
+![Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/13_Informaciya_posle_dobavleniya_ssd5_v_RAID_i_uvelichenie_razmerov_razdelov_na_oboih_diskah.png "Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках")
+![Настройка RAID]( "Настройка RAID")
+![Размер VG увеличился](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/15_Razmer_VG_uvelichilsya.png "Размер VG увеличился")
+![Информация об увеличении размеров root и var](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/16_Informaciya_ob_uvelichenii_razmerov_root_i_var.png "Информация об увеличении размеров root и var")
+![Конечный результат работы с SSD](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/17_Konechny_rezultat_raboti_s_ssd.png "Конечный результат работы с SSD")
+![Информация о дисках после создания логического тома](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/18_Informaciya_o_diskah_posle_sozdaniya_logicheskogo_toma.png "Информация о дисках после создания логического тома")
+![Информация о дисках после форматирования разделов](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/19_Informaciya_o_diskah_posle_formatirovaniya_razdelov.png "Информация о дисках после форматирования разделов")
+![Информация о дисках после переформатирования var log'ов](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/20_Informaciya_o_diskah_posle_peremontirovaniya_varlogov.png "Информация о дисках после переформатирования var log'ов")
+![Изменение файла fstab](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/21_Izmenenie_faila_fstab.png "Изменение файла fstab")
+![Последняя проверка pvs, lvs, vgs](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/22_Poslednyaya_proverka_pvs_lvs_vgs.png "Последняя проверка pvs, lvs, vgs")
+![Последняя проверка и информация о дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/23_Poslednyaya_proverka_i_informaciya_o_diskah.png "Последняя проверка и информация о дисках")
+![Последняя информация о RAID](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/24_Poslednyaa_informaciya_o_RAID.png "Последняя информация о RAID")
+
+
+
