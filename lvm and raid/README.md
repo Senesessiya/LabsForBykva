@@ -3,6 +3,9 @@
 
 ##Задание 1 (Установка ОС и настройка LVM, RAID)
 
+**КРАСИВЫЙ** _ШРИФТ_
+**ЗАЛОГ _УСПЕШНОЙ СДАЧИ_ ЛАБЫ**
+~~ (НЕТ) ~~
 
 ![Начинаем установку](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/1_Nachinaem_ustanovku.png "Начинаем установку")
 ![Первое разделение дисков](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/2_Pervoe_razdelenie_diskov.png "Первое разделение дисков")
