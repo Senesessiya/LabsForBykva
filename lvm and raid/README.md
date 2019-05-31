@@ -8,7 +8,7 @@
 **ЗАЛОГ _УСПЕШНОЙ СДАЧИ_ ЛАБЫ**
 ~~(НЕТ)~~
 
-Характеристики нашей прекрасной вирутальной машины:
+###Характеристики нашей прекрасной вирутальной машины:
 
 1 gb ram
 
@@ -21,14 +21,30 @@ SATA контроллер на 4 порта
 
 Всё как вы и заказывали ;)
 
+###Самое начало работы, информация о дисках:
 
 ![Начинаем установку](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/1_Nachinaem_ustanovku.png "Начинаем установку")
 ![Первое разделение дисков](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/2_Pervoe_razdelenie_diskov.png "Первое разделение дисков")
+
+###Самое время для настройки RAID (указываем место и тд.):
+
+Выбераем свободное место на первом диске и настраиваем в качестве типа раздела physical volume for RAID
+
+Выбераем "Done setting up the partition"
+
+Повторяем точно такую же настройку для второго диска
+
 ![Указание места для RAID](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/3_Ukazanie_mesta_dlya_RAID.png "Указание места для RAID")
 ![Настройка RAID](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/4_Nastroyka_RAID.png "Настройка RAID")
+
+###Начинаем настройку LVN:
+
 ![Начало настройки LVM](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/5_Nachalo_nastroyki_LVM.png "Начало настройки LVM")
 ![Середина настройки LVM](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/6_Seredina_nastroyki_LVM.png "Середина настройки LVM")
 ![Конечная настройка LVM](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/7_Konechnaya_nastroyka_LVM.png "Конечная настройка LVM")
+
+###Конечный результат установки: 
+
 ![Конечный результат установки](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/8_Konechnyi_rezultat_ustanovki.png "Конечный результат установки")
 ![Установка GRAB на первый диск](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/9_Ustanovka_GRUB_na_perviy_disk.png "Установка GRAB на первый диск")
 ![Первая информация о дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/10_Pervaya_informaciya_o_diskah.png "Первая информация о дисках")
@@ -40,19 +56,23 @@ SATA контроллер на 4 порта
 
 Так как мы при настройке нашей виртуальной машины выбрали HotSwap, то мы можем удалять жесткие диски на ходу. Удаляем ssd1 в свойствах машины и ssd1.vmdk.
 
-Реакция ВМ на удаление ssd1:
+###Реакция ВМ на удаление ssd1:
+
 ![Реакция на удаление SSD1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/1_Reakciya_na_udalenie_SSD1.png "Настройка RAID")
 ![Миртуальная машина не работает](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/2_Virtualnaya_machina_ne_rabotaet.png "Виртуальная машина не работает")
 ![Проверка статуса RAID после удаления SSD1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/3_Proverka_statusa_RAID_posle_udaleniya_ssd1.png "Проверка статуса RAID после удаления SSD1")
 
-Подключаем ssd3:
+###Подключаем ssd3:
+
 ![Реакция машины на добавление SSD3](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/4_Reakciya_machini_na_dobavlenie_SSD3.png "Реакция машины на добавление SSD3")
 
-Добавим его в RAID:
+###Добавим его в RAID:
+
 ![Добавление в RAID SSD1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/5_Dobavlenie_v_RAID_ssd3.png "Добавление в RAID SSD3")
 ![Результат в mdstat](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/6_Rezultat_v_mdstat.png "Результат в mdstat")
 
-Итог: Удален диск ssd1, сохранен диск ssd2, добавлен диск ssd3.
+###Итог: Удален диск ssd1, сохранен диск ssd2, добавлен диск ssd3.
+
 ![Результат задания 2](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%202/7_Rezultat_zadaniya_2.png "Результат задания 2")
 
 
