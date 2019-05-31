@@ -68,10 +68,12 @@ SATA контроллер на 4 порта
 
 ## Задание 3 (Добавление новых дисков и перенос раздела)
 
-Проэмулируем отказ диска ssd2, удалив из свойств ВМ диск и перезагрузившись: 
+#### Проэмулируем отказ диска ssd2, удалив из свойств ВМ диск и перезагрузившись: 
+
 ![Информация о дисках после удаления SSD2](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/1_Informaciya_o_diskah_posle_udaleniya_SSD2.png "Информация о дисках после удаления SSD2")
 
-Текущее состояние дисков и RAID:
+#### Текущее состояние дисков и RAID:
+
 ![Информация в mdstat после удаления SSD2](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/2_Informaciya_v_mdstat_posle_udaleniya_ssd2.png "Информация в mdstat после удаления SSD2")
 
 #### Но Господь был добр к нам (или наш шеф ¯\_(ツ)_/¯). Нам было даровано:
@@ -84,18 +86,37 @@ SATA контроллер на 4 порта
 
 Объем HDD в 2 раза больше чем SSD. Объем новых SSD в 1,25 раза больше старых.
 
-#### Добавим один новый ssd диск, назвав его ssd4:
+#### Добавим один новый ssd диск, назвав его ssd4. Не забываем копировать файловую таблицу со старого диска на новый! 
+
+#### Информация о дисках после добавления SSD 4:
 
 ![Информация после добавления SSD4](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/3_Informaciya_posle_dobavleniya_ssd4.png "Информация после добавления SSD4")
 
 #### Не забываем копировать файловую таблицу со старого диска на новый! 
 
+#### Информация о дисках после копирования на него файловой таблицы и перемонтирования /boot:
+
+
 ![Информация после копирования файловой таблицы на SSD4](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/4_Informaciya_posle_kopirovaniya_failovoi_tablici_na_ssd4.png "Информация после копирования файловой таблицы на SSD4")
+
 ![Информация после монтирования boot на SSD4](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/5_Informaciya_posle_montirovaniya_boot_na_ssd4.png "Информация после монтирования boot на SSD4")
+
+#### Информация после создания нового RAID масиива:
+
 ![Информация после создания нового RAID массива](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/6_Informaciya_posle_sozdaniya_novogo_RAID_massiva.png "Информация после создания нового RAID массива")
+
+#### Информация pvs до и после создания нового физ.тома:
+
 ![Изменения pvs до и пос ле создания нового физ.тома](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/7_Izmeneniya_pvs_do_i_posle_sozdaniya_novogo_fiz_toma.png "Изменения pvs до и пос ле создания нового физ.тома")
+
 ![Информация о дисках после создания физ.тома](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/8_Informaciya_o_diskah_posle_sozdaniya_fiz_toma.png "Информация о дисках после создания физ.тома")
+
+#### Log, root и var все пока еще находятся на md0
+
 ![log, root и var находятся на md0](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/9_log_root_i_var_nahodyatsya_na_md0.png "log, root и var находятся на md0")
+
+#### А здесь результаты после перемещения всех LV. Теперь они находятся на md63:
+
 ![Результат после перемещения LV](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/10_Rezltat_posle_peremecheniya_LV.png "Результат после перемещения LV")
 ![Информация о дисках только после добавления всех новых](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/11_Informaciya_o_diskah_tolko_posle_dobavleniya_vseh_novih.png "Информация о дисках только после добавления всех новых")
 ![Информация о дисках после копипрования таблицы файлов и SDA1](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/12_Informaciya_o_discah_posle_kopirovaniya_tablici_failov_i_sda1.png "Информация о дисках после копипрования таблицы файлов и SDA1")
@@ -109,6 +130,9 @@ ssd5 - второй новый ssd
 hdd1 - первый новый hdd
 
 hdd2 - второй новый hdd
+
+
+#### Добавили SSD 5 в RAID массив и увеличили размеры разедела на обоих дисках:
 
 ![Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/13_Informaciya_posle_dobavleniya_ssd5_v_RAID_i_uvelichenie_razmerov_razdelov_na_oboih_diskah.png "Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках")
 ![Размеры вторых разделов равны md127](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/14_Razmeri_vrorih_razdelov_ravni_md127.png "Размеры вторых разделов равны md127")
