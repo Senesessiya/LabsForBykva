@@ -36,7 +36,13 @@ SATA контроллер на 4 порта
 #### Конечный результат установки: 
 
 ![Конечный результат установки](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/8_Konechnyi_rezultat_ustanovki.png "Конечный результат установки")
+
+#### Установка GRAB на первый диск:
+
 ![Установка GRAB на первый диск](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/9_Ustanovka_GRUB_na_perviy_disk.png "Установка GRAB на первый диск")
+
+#### Первая информация о дисках, RAID и pvs, vgs, lvs:
+
 ![Первая информация о дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/10_Pervaya_informaciya_o_diskah.png "Первая информация о дисках")
 ![Первая информация о RAID](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/11_Pervaya_informaciya_o_RAID.png "Первая информация о RAID")
 ![Первая информация о pvs, vgs, lvs](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%201/12_Pervaya_informaciya_o_pvs_vgs_lvs.png "Первая информация о pvs, vgs, lvs")
@@ -132,17 +138,40 @@ hdd1 - первый новый hdd
 hdd2 - второй новый hdd
 
 
-#### Добавили SSD 5 в RAID массив и увеличили размеры разедела на обоих дисках:
+#### Добавили SSD 5 в RAID массив и увеличили размеры разедела на обоих дисках.
+
+Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках:
 
 ![Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/13_Informaciya_posle_dobavleniya_ssd5_v_RAID_i_uvelichenie_razmerov_razdelov_na_oboih_diskah.png "Информация после добавления SSD5 в RAID и увеличение размеров разделов на обоих дисках")
+
+#### Как мы видим, размеры вторых разделов равны md127.
+
 ![Размеры вторых разделов равны md127](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/14_Razmeri_vrorih_razdelov_ravni_md127.png "Размеры вторых разделов равны md127")
+
+#### Размер VG увеличился.
+
 ![Размер VG увеличился](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/15_Razmer_VG_uvelichilsya.png "Размер VG увеличился")
+
+#### Информация об увеличении размеров root и var
+
 ![Информация об увеличении размеров root и var](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/16_Informaciya_ob_uvelichenii_razmerov_root_i_var.png "Информация об увеличении размеров root и var")
+
+#### Ну и наконец-то, конечный результат работы с SSD:
+
 ![Конечный результат работы с SSD](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/17_Konechny_rezultat_raboti_s_ssd.png "Конечный результат работы с SSD")
+
+#### На следующих скринах представлена информация о дисках после создания логического тома, после форматирования разделов и после переформатирования var/log'ов:
+
 ![Информация о дисках после создания логического тома](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/18_Informaciya_o_diskah_posle_sozdaniya_logicheskogo_toma.png "Информация о дисках после создания логического тома")
 ![Информация о дисках после форматирования разделов](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/19_Informaciya_o_diskah_posle_formatirovaniya_razdelov.png "Информация о дисках после форматирования разделов")
 ![Информация о дисках после переформатирования var log'ов](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/20_Informaciya_o_diskah_posle_peremontirovaniya_varlogov.png "Информация о дисках после переформатирования var log'ов")
+
+#### Изменения файла fstab:
+
 ![Изменение файла fstab](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/21_Izmenenie_faila_fstab.png "Изменение файла fstab")
+
+###Финишная прямая: последняя проверка pvs, lvs, vgs; проверка информации о дисках и последняя информация о RAID.
+
 ![Последняя проверка pvs, lvs, vgs](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/22_Poslednyaya_proverka_pvs_lvs_vgs.png "Последняя проверка pvs, lvs, vgs")
 ![Последняя проверка и информация о дисках](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/23_Poslednyaya_proverka_i_informaciya_o_diskah.png "Последняя проверка и информация о дисках")
 ![Последняя информация о RAID](https://github.com/Senesessiya/LabsForBykva/blob/master/lvm%20and%20raid/screenshots/part%203/24_Poslednyaa_informaciya_o_RAID.png "Последняя информация о RAID")
