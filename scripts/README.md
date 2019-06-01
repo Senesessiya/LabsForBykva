@@ -13,7 +13,7 @@
 
 Я потратила на это много часов однотипной работы, пожалейте, плез)
 
-![Я на сессии](https://d2hhj3gz5jljkm.cloudfront.net/163/bf774/ecd3/417c/bfeb/589a8ffcbdf8/original/1628189.jpg "лол")
+
 
 
 
